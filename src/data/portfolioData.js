@@ -6,7 +6,7 @@ export const personalData = {
   phone: "+91 9398193184",
   email: "vamsichowdarynalla223@gmail.com",
   linkedin: "https://linkedin.com/in/vamsi-satyadev-nalla",
-  github: "https://github.com/vamsisatyadev",
+  github: "https://github.com/vamsichowdarynalla2239-ship-it",
   statusBadge: "Available for Opportunities & Collaborations",
   summary: "I’m an IT student passionate about building clean, reliable web applications across the full stack using React.js, Angular, and Node.js. Beyond core web development, I love experimenting with AI—like integrating LLMs and smart APIs into real-world projects such as VedaFit AI and LAVIX. Winning local app development competitions has pushed me to keep building products that actually solve practical problems. I’m looking to bring that blend of full-stack engineering and curiosity for new tech to a collaborative development team.",
   stats: [
@@ -98,7 +98,7 @@ export const projectsData = [
       { label: "Feature", value: "P2P Skill Matching" },
       { label: "Database", value: "MongoDB Schemas" }
     ],
-    github: "https://github.com/vamsisatyadev/skill-swap",
+    github: "https://github.com/vamsichowdarynalla2239-ship-it",
     demo: "#",
     gridSpan: "col-span-1 lg:col-span-2"
   },
@@ -118,7 +118,7 @@ export const projectsData = [
       { label: "Frontend", value: "Interactive React UI" },
       { label: "Backend", value: "Node.js Pipelines" }
     ],
-    github: "https://github.com/vamsisatyadev/lavix-try-on",
+    github: "https://github.com/vamsichowdarynalla2239-ship-it/vastra-alankara-main-old",
     demo: "#",
     gridSpan: "col-span-1 lg:col-span-1"
   },
@@ -138,7 +138,7 @@ export const projectsData = [
       { label: "Architecture", value: "RAG Pipeline" },
       { label: "Backend", value: "FastAPI & MongoDB" }
     ],
-    github: "https://github.com/vamsisatyadev/vedafit-ai",
+    github: "https://github.com/vamsichowdarynalla2239-ship-it",
     demo: "#",
     gridSpan: "col-span-1 lg:col-span-3"
   }

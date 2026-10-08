@@ -120,9 +120,17 @@ const BentoProjects = () => {
                     <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full">
                       {p.category}
                     </span>
-                    <span className="w-8 h-8 rounded-full border border-stone-700 bg-stone-900 text-cream flex items-center justify-center transition-all duration-300 group-hover:bg-gold group-hover:border-gold group-hover:text-ink shadow-sm">
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="w-8 h-8 rounded-full border border-stone-700 bg-stone-900 text-cream flex items-center justify-center transition-all duration-300 hover:bg-gold hover:border-gold hover:text-ink hover:scale-110 shadow-sm z-20 cursor-pointer"
+                      title="Open GitHub Repository"
+                      aria-label={`Open ${p.title} on GitHub`}
+                    >
                       <ArrowUpRight className="w-4 h-4" />
-                    </span>
+                    </a>
                   </div>
 
                   <p className="text-[11px] font-mono font-bold tracking-wider mb-1.5 text-gold flex items-center gap-1.5">
@@ -147,14 +155,24 @@ const BentoProjects = () => {
                   </div>
                 </div>
 
-                {/* Footer Description */}
+                {/* Footer Description & Actions */}
                 <div className="pt-3 border-t border-stone-800">
                   <p className="text-xs leading-relaxed text-stone-400 line-clamp-3 group-hover:text-stone-300 transition-colors mb-3">
                     {p.bullets[0]}
                   </p>
                   <div className="flex items-center justify-between text-[11px] font-mono text-stone-500">
-                    <span className="text-gold font-bold">View Case Study &rarr;</span>
-                    <span>#{idx + 1}</span>
+                    <span className="text-gold font-bold">Case Study &rarr;</span>
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-900 hover:bg-stone-800 text-cream hover:text-gold border border-stone-700 hover:border-gold/50 transition-all duration-200 z-20 cursor-pointer"
+                      title="Open GitHub Repository"
+                    >
+                      <GithubIcon className="w-3.5 h-3.5" />
+                      <span>GitHub &rarr;</span>
+                    </a>
                   </div>
                 </div>
               </motion.div>
@@ -164,7 +182,7 @@ const BentoProjects = () => {
 
         {/* Desktop Helper Status Text */}
         <p className="hidden lg:block text-center text-xs font-mono text-stone-500 mt-2">
-          {isHovered ? '✨ Cards split! Click any card to read technical case study' : '👈 Hover over the cards to split and view each project 👉'}
+          {isHovered ? '✨ Click "GitHub →" to view code or click card to read technical case study' : '👈 Hover over the cards to split and view each project 👉'}
         </p>
 
         {/* Mobile / Tablet: Responsive Stacked Grid */}
@@ -184,7 +202,16 @@ const BentoProjects = () => {
                   <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full">
                     {p.category}
                   </span>
-                  <ArrowUpRight className="w-4 h-4 text-gold" />
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="w-8 h-8 rounded-full border border-stone-700 bg-stone-900 text-cream flex items-center justify-center hover:bg-gold hover:text-ink transition-colors"
+                    title="Open GitHub Repository"
+                  >
+                    <ArrowUpRight className="w-4 h-4 text-gold" />
+                  </a>
                 </div>
                 <h3 className="font-serif font-black text-2xl text-[#FAF8F4] mb-2">
                   {p.title}
@@ -196,7 +223,19 @@ const BentoProjects = () => {
                 </div>
                 <p className="text-xs text-stone-400 leading-relaxed mb-4">{p.bullets[0]}</p>
               </div>
-              <span className="text-xs font-mono text-gold font-bold">View details &rarr;</span>
+              <div className="flex items-center justify-between pt-3 border-t border-stone-800">
+                <span className="text-xs font-mono text-gold font-bold">Details &rarr;</span>
+                <a
+                  href={p.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-900 text-cream text-xs font-mono border border-stone-700 hover:text-gold"
+                >
+                  <GithubIcon className="w-3.5 h-3.5" />
+                  <span>GitHub &rarr;</span>
+                </a>
+              </div>
             </motion.div>
           ))}
         </div>

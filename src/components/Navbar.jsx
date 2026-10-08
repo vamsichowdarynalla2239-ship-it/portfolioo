@@ -6,6 +6,7 @@ const Navbar = ({ onOpenResume, onOpenContact }) => {
 
   const navLinks = [
     { name: 'About',    href: '#about' },
+    { name: 'Skills',   href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Journey',  href: '#journey' },
     { name: 'Awards',   href: '#certifications' },

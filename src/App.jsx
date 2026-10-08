@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
+import SkillsSection from './components/SkillsSection';
 import BentoProjects from './components/BentoProjects';
 import Timeline from './components/Timeline';
 import Certifications from './components/Certifications';
@@ -30,6 +31,9 @@ function App() {
         <AboutSection
           onOpenResume={() => setIsResumeOpen(true)}
           onOpenContact={() => setIsContactOpen(true)}
+        />
+        <SkillsSection
+          onOpenResume={() => setIsResumeOpen(true)}
         />
         <BentoProjects />
         <Timeline />
